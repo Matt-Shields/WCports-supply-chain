@@ -9,7 +9,6 @@ import datetime as dt
 import pandas as pd
 import numpy as np
 
-# from utils import get_installed_capacity_by
 
 
 def mysave(fig, froot, mode='png'):
