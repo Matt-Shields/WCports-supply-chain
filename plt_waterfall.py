@@ -79,7 +79,7 @@ def plot_waterfall_domestic_content(df, fname):
     scenario_names = {
         'se_asia': 'Southeast Asia',
         'us (no IRA Domestic Content Bonus Credits)' : 'West Coast',
-        'us (IRA Domestic Content Bonus Credits)': 'West Coast \nWith Domestic Content Bonus from \n Inflation Reduction Act',
+        'us (IRA Domestic Content Bonus Credits)': 'West Coast \n(With Domestic Content Bonus from \n Inflation Reduction Act)',
         'us_steel': 'West Coast Using \nImported Raw Steel'
     }
 
