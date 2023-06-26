@@ -10,30 +10,30 @@ def plot_waterfall_domestic_content(df, fname):
     
     scenarios = {
         'se_asia': {
-            'Labor Costs': 378,
-            'Material Costs': 1114,
-            'Transportation Costs': 709,
+            'Labor Costs': 685,
+            'Material Costs': 1747,
+            'Transportation Costs': 708,
         },
         'us (no IRA Domestic Content Bonus Credits)': {
-            'Labor Costs': 756,
-            'Material Costs': 1352,
+            'Labor Costs': 1370,
+            'Material Costs': 2159,
             'Transportation Costs': 48,
-            'New Factory Amortization': 105,
+            'New Factory Amortization': 164,
             # 'IRA Domestic Content Bonus Credits': 226
         },
         'us (IRA Domestic Content Bonus Credits)': {
-            'Labor Costs': 756,
-            'Material Costs': 1352 - 226,
+            'Labor Costs': 1370,
+            'Material Costs': 2159 - 370,
             'Transportation Costs': 48,
-            'New Factory Amortization': 105,
+            'New Factory Amortization': 164,
             # 'IRA Domestic Content Bonus Credits': 226
         },
         'us_steel':  {
-            'Labor Costs': 756,
-            'Material Costs': 1352,
+            'Labor Costs': 1370,
+            'Material Costs': 2159,
             'Transportation Costs': 48,
-            'New Factory Amortization': 105,
-            'Section 232 Steel Tariffs': 203,
+            'New Factory Amortization': 164,
+            'Section 232 Steel Tariffs': 354,
         },            
     }
    
@@ -86,7 +86,7 @@ def plot_waterfall_domestic_content(df, fname):
             
     ax.set_title('Components Manufactured on the West Coast Could be Cost Competitive \nWith Imports From Southeast Asia Because of Reduced Transportation Costs \nand Benefits From the Inflation Reduction Act')
 
-    ax.set_ylim(0, 3500)
+    ax.set_ylim(0, 4500)
     ax.set_ylabel('Total Landed Component Cost for a \nAnalysing1 GW Floating Wind Project ($/kW)')
 
     ax.get_yaxis().set_major_formatter(
